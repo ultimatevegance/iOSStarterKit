@@ -17,6 +17,9 @@
 		160D228A212A8F2400AED8EB /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160D2289212A8F2400AED8EB /* AppColor.swift */; };
 		160D228C212A8F3D00AED8EB /* AppFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160D228B212A8F3D00AED8EB /* AppFont.swift */; };
 		160D228E212A8F5800AED8EB /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160D228D212A8F5800AED8EB /* AppConstant.swift */; };
+		160D2293212AC97500AED8EB /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 160D2292212AC97500AED8EB /* Moya.framework */; };
+		160D2295212ACA4700AED8EB /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 160D2294212ACA4700AED8EB /* Alamofire.framework */; };
+		160D2297212ACA7D00AED8EB /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 160D2296212ACA7D00AED8EB /* Result.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		160D2289212A8F2400AED8EB /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 		160D228B212A8F3D00AED8EB /* AppFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFont.swift; sourceTree = "<group>"; };
 		160D228D212A8F5800AED8EB /* AppConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
+		160D2292212AC97500AED8EB /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/iOS/Moya.framework; sourceTree = "<group>"; };
+		160D2294212ACA4700AED8EB /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		160D2296212ACA7D00AED8EB /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				160D2297212ACA7D00AED8EB /* Result.framework in Frameworks */,
+				160D2295212ACA4700AED8EB /* Alamofire.framework in Frameworks */,
+				160D2293212AC97500AED8EB /* Moya.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +96,7 @@
 				160D2267212A81A000AED8EB /* iOSStarterKitTests */,
 				160D2272212A81A000AED8EB /* iOSStarterKitUITests */,
 				160D2251212A819D00AED8EB /* Products */,
+				160D2291212AC97400AED8EB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,8 +114,8 @@
 			isa = PBXGroup;
 			children = (
 				160D2287212A820F00AED8EB /* BizModules */,
-				160D2288212A82CD00AED8EB /* Resources */,
 				160D2281212A820400AED8EB /* Base */,
+				160D2288212A82CD00AED8EB /* Resources */,
 			);
 			path = iOSStarterKit;
 			sourceTree = "<group>";
@@ -131,11 +141,11 @@
 		160D2281212A820400AED8EB /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				160D228F212A8FBC00AED8EB /* Extension */,
 				160D2282212A820400AED8EB /* AppConfig */,
 				160D2283212A820400AED8EB /* Data */,
 				160D2284212A820400AED8EB /* Networking */,
 				160D2285212A820400AED8EB /* UIComponents */,
+				160D228F212A8FBC00AED8EB /* Extension */,
 				160D2286212A820400AED8EB /* Vendor */,
 			);
 			path = Base;
@@ -212,6 +222,16 @@
 			children = (
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		160D2291212AC97400AED8EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				160D2296212ACA7D00AED8EB /* Result.framework */,
+				160D2294212ACA4700AED8EB /* Alamofire.framework */,
+				160D2292212AC97500AED8EB /* Moya.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -523,7 +543,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TSXDWSWUUR;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = iOSStarterKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -541,7 +565,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TSXDWSWUUR;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = iOSStarterKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
