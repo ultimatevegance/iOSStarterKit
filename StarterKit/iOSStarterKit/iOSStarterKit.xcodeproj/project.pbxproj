@@ -20,6 +20,12 @@
 		160D2293212AC97500AED8EB /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 160D2292212AC97500AED8EB /* Moya.framework */; };
 		160D2295212ACA4700AED8EB /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 160D2294212ACA4700AED8EB /* Alamofire.framework */; };
 		160D2297212ACA7D00AED8EB /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 160D2296212ACA7D00AED8EB /* Result.framework */; };
+		1C98F1CC212AFCCB00E1E188 /* UIViewEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C98F1CB212AFCCB00E1E188 /* UIViewEx.swift */; };
+		1C98F1CE212AFCF300E1E188 /* TabPager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C98F1CD212AFCF300E1E188 /* TabPager.swift */; };
+		1C98F1D0212AFD0700E1E188 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C98F1CF212AFD0700E1E188 /* DatabaseManager.swift */; };
+		1C98F1D2212AFD2300E1E188 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C98F1D1212AFD2300E1E188 /* NetworkClient.swift */; };
+		1C98F1D4212AFD3000E1E188 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C98F1D3212AFD3000E1E188 /* Helper.swift */; };
+		1C98F1D6212AFD4100E1E188 /* BaseUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C98F1D5212AFD4100E1E188 /* BaseUIViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +65,12 @@
 		160D2292212AC97500AED8EB /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/iOS/Moya.framework; sourceTree = "<group>"; };
 		160D2294212ACA4700AED8EB /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		160D2296212ACA7D00AED8EB /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		1C98F1CB212AFCCB00E1E188 /* UIViewEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewEx.swift; sourceTree = "<group>"; };
+		1C98F1CD212AFCF300E1E188 /* TabPager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabPager.swift; sourceTree = "<group>"; };
+		1C98F1CF212AFD0700E1E188 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		1C98F1D1212AFD2300E1E188 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		1C98F1D3212AFD3000E1E188 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		1C98F1D5212AFD4100E1E188 /* BaseUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUIViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,12 +153,13 @@
 		160D2281212A820400AED8EB /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				1C98F1CA212AFCA600E1E188 /* BaseClass */,
+				1C98F1C9212AFC9D00E1E188 /* Tools */,
+				1C98F1C8212AFC5800E1E188 /* Networking */,
+				1C98F1C7212AFC5500E1E188 /* Data */,
+				1C98F1C6212AFC5100E1E188 /* UIComponents */,
+				1C98F1C5212AFC4200E1E188 /* Extension */,
 				160D2282212A820400AED8EB /* AppConfig */,
-				160D2283212A820400AED8EB /* Data */,
-				160D2284212A820400AED8EB /* Networking */,
-				160D2285212A820400AED8EB /* UIComponents */,
-				160D228F212A8FBC00AED8EB /* Extension */,
-				160D2286212A820400AED8EB /* Vendor */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -162,34 +175,6 @@
 				160D225F212A819F00AED8EB /* Info.plist */,
 			);
 			path = AppConfig;
-			sourceTree = "<group>";
-		};
-		160D2283212A820400AED8EB /* Data */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Data;
-			sourceTree = "<group>";
-		};
-		160D2284212A820400AED8EB /* Networking */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Networking;
-			sourceTree = "<group>";
-		};
-		160D2285212A820400AED8EB /* UIComponents */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = UIComponents;
-			sourceTree = "<group>";
-		};
-		160D2286212A820400AED8EB /* Vendor */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Vendor;
 			sourceTree = "<group>";
 		};
 		160D2287212A820F00AED8EB /* BizModules */ = {
@@ -209,21 +194,6 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		160D228F212A8FBC00AED8EB /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				160D2290212A8FBC00AED8EB /* Tools */,
-			);
-			path = Extension;
-			sourceTree = "<group>";
-		};
-		160D2290212A8FBC00AED8EB /* Tools */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Tools;
-			sourceTree = "<group>";
-		};
 		160D2291212AC97400AED8EB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -232,6 +202,54 @@
 				160D2292212AC97500AED8EB /* Moya.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1C98F1C5212AFC4200E1E188 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1C98F1CB212AFCCB00E1E188 /* UIViewEx.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		1C98F1C6212AFC5100E1E188 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				1C98F1CD212AFCF300E1E188 /* TabPager.swift */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		1C98F1C7212AFC5500E1E188 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				1C98F1CF212AFD0700E1E188 /* DatabaseManager.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		1C98F1C8212AFC5800E1E188 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				1C98F1D1212AFD2300E1E188 /* NetworkClient.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		1C98F1C9212AFC9D00E1E188 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				1C98F1D3212AFD3000E1E188 /* Helper.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		1C98F1CA212AFCA600E1E188 /* BaseClass */ = {
+			isa = PBXGroup;
+			children = (
+				1C98F1D5212AFD4100E1E188 /* BaseUIViewController.swift */,
+			);
+			path = BaseClass;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -365,11 +383,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C98F1D0212AFD0700E1E188 /* DatabaseManager.swift in Sources */,
 				160D228C212A8F3D00AED8EB /* AppFont.swift in Sources */,
 				160D228E212A8F5800AED8EB /* AppConstant.swift in Sources */,
+				1C98F1D6212AFD4100E1E188 /* BaseUIViewController.swift in Sources */,
 				160D2256212A819E00AED8EB /* ViewController.swift in Sources */,
 				160D2254212A819E00AED8EB /* AppDelegate.swift in Sources */,
+				1C98F1D2212AFD2300E1E188 /* NetworkClient.swift in Sources */,
 				160D228A212A8F2400AED8EB /* AppColor.swift in Sources */,
+				1C98F1D4212AFD3000E1E188 /* Helper.swift in Sources */,
+				1C98F1CE212AFCF300E1E188 /* TabPager.swift in Sources */,
+				1C98F1CC212AFCCB00E1E188 /* UIViewEx.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -548,7 +572,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = iOSStarterKit/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/iOSStarterKit/Base/AppConfig/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -570,7 +594,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = iOSStarterKit/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/iOSStarterKit/Base/AppConfig/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
