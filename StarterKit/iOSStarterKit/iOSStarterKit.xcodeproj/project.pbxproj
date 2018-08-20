@@ -14,6 +14,9 @@
 		160D225E212A819F00AED8EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 160D225C212A819F00AED8EB /* LaunchScreen.storyboard */; };
 		160D2269212A81A000AED8EB /* iOSStarterKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160D2268212A81A000AED8EB /* iOSStarterKitTests.swift */; };
 		160D2274212A81A000AED8EB /* iOSStarterKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160D2273212A81A000AED8EB /* iOSStarterKitUITests.swift */; };
+		160D228A212A8F2400AED8EB /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160D2289212A8F2400AED8EB /* AppColor.swift */; };
+		160D228C212A8F3D00AED8EB /* AppFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160D228B212A8F3D00AED8EB /* AppFont.swift */; };
+		160D228E212A8F5800AED8EB /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160D228D212A8F5800AED8EB /* AppConstant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		160D226F212A81A000AED8EB /* iOSStarterKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSStarterKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		160D2273212A81A000AED8EB /* iOSStarterKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSStarterKitUITests.swift; sourceTree = "<group>"; };
 		160D2275212A81A000AED8EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		160D2289212A8F2400AED8EB /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
+		160D228B212A8F3D00AED8EB /* AppFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFont.swift; sourceTree = "<group>"; };
+		160D228D212A8F5800AED8EB /* AppConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +131,7 @@
 		160D2281212A820400AED8EB /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				160D228F212A8FBC00AED8EB /* Extension */,
 				160D2282212A820400AED8EB /* AppConfig */,
 				160D2283212A820400AED8EB /* Data */,
 				160D2284212A820400AED8EB /* Networking */,
@@ -138,6 +145,9 @@
 			isa = PBXGroup;
 			children = (
 				160D2253212A819E00AED8EB /* AppDelegate.swift */,
+				160D2289212A8F2400AED8EB /* AppColor.swift */,
+				160D228B212A8F3D00AED8EB /* AppFont.swift */,
+				160D228D212A8F5800AED8EB /* AppConstant.swift */,
 				160D225C212A819F00AED8EB /* LaunchScreen.storyboard */,
 				160D225F212A819F00AED8EB /* Info.plist */,
 			);
@@ -187,6 +197,21 @@
 				160D225A212A819F00AED8EB /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		160D228F212A8FBC00AED8EB /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				160D2290212A8FBC00AED8EB /* Tools */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		160D2290212A8FBC00AED8EB /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,8 +345,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				160D228C212A8F3D00AED8EB /* AppFont.swift in Sources */,
+				160D228E212A8F5800AED8EB /* AppConstant.swift in Sources */,
 				160D2256212A819E00AED8EB /* ViewController.swift in Sources */,
 				160D2254212A819E00AED8EB /* AppDelegate.swift in Sources */,
+				160D228A212A8F2400AED8EB /* AppColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
