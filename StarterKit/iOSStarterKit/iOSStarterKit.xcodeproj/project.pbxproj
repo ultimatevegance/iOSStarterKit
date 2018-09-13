@@ -97,6 +97,11 @@
 		1CC19057214AAB4700F46486 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC19056214AAB4700F46486 /* ViewController.swift */; };
 		1CC19059214AAC2200F46486 /* DemoChild2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC19058214AAC2200F46486 /* DemoChild2ViewController.swift */; };
 		1CC1909E214AF3DC00F46486 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CC1909D214AF3DB00F46486 /* Kingfisher.framework */; };
+		1CC190A5214AF76700F46486 /* OnlyPicturesProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC190A0214AF76600F46486 /* OnlyPicturesProtocol.swift */; };
+		1CC190A6214AF76700F46486 /* OnlyPictureImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC190A1214AF76700F46486 /* OnlyPictureImageView.swift */; };
+		1CC190A7214AF76700F46486 /* OnlyPictures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC190A2214AF76700F46486 /* OnlyPictures.swift */; };
+		1CC190A8214AF76700F46486 /* OnlyHorizontalPictures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC190A3214AF76700F46486 /* OnlyHorizontalPictures.swift */; };
+		1CC190A9214AF76700F46486 /* OnlyPicturesAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC190A4214AF76700F46486 /* OnlyPicturesAnimations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -228,6 +233,11 @@
 		1CC19056214AAB4700F46486 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1CC19058214AAC2200F46486 /* DemoChild2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoChild2ViewController.swift; sourceTree = "<group>"; };
 		1CC1909D214AF3DB00F46486 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
+		1CC190A0214AF76600F46486 /* OnlyPicturesProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnlyPicturesProtocol.swift; sourceTree = "<group>"; };
+		1CC190A1214AF76700F46486 /* OnlyPictureImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnlyPictureImageView.swift; sourceTree = "<group>"; };
+		1CC190A2214AF76700F46486 /* OnlyPictures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnlyPictures.swift; sourceTree = "<group>"; };
+		1CC190A3214AF76700F46486 /* OnlyHorizontalPictures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnlyHorizontalPictures.swift; sourceTree = "<group>"; };
+		1CC190A4214AF76700F46486 /* OnlyPicturesAnimations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnlyPicturesAnimations.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -459,6 +469,7 @@
 		1C98F1C6212AFC5100E1E188 /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				1CC1909F214AF71100F46486 /* CircleOverlapingAvatarView */,
 				16129304214A7B1100DAC499 /* TabSwitcher */,
 			);
 			path = UIComponents;
@@ -494,6 +505,18 @@
 				1C98F1D5212AFD4100E1E188 /* BaseUIViewController.swift */,
 			);
 			path = BaseClass;
+			sourceTree = "<group>";
+		};
+		1CC1909F214AF71100F46486 /* CircleOverlapingAvatarView */ = {
+			isa = PBXGroup;
+			children = (
+				1CC190A3214AF76700F46486 /* OnlyHorizontalPictures.swift */,
+				1CC190A1214AF76700F46486 /* OnlyPictureImageView.swift */,
+				1CC190A2214AF76700F46486 /* OnlyPictures.swift */,
+				1CC190A4214AF76700F46486 /* OnlyPicturesAnimations.swift */,
+				1CC190A0214AF76600F46486 /* OnlyPicturesProtocol.swift */,
+			);
+			path = CircleOverlapingAvatarView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -656,6 +679,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CC190A8214AF76700F46486 /* OnlyHorizontalPictures.swift in Sources */,
 				16129325214A7B4B00DAC499 /* IndicatorInfo.swift in Sources */,
 				1CC1902D214A8D0F00F46486 /* UIDeviceExtensions.swift in Sources */,
 				1612931D214A7B4B00DAC499 /* BarView.swift in Sources */,
@@ -678,6 +702,9 @@
 				1CC19030214A8D0F00F46486 /* BlockButton.swift in Sources */,
 				1C98F1D0212AFD0700E1E188 /* DatabaseManager.swift in Sources */,
 				1CC19049214A8D0F00F46486 /* UIApplicationExtensions.swift in Sources */,
+				1CC190A5214AF76700F46486 /* OnlyPicturesProtocol.swift in Sources */,
+				1CC190A6214AF76700F46486 /* OnlyPictureImageView.swift in Sources */,
+				1CC190A9214AF76700F46486 /* OnlyPicturesAnimations.swift in Sources */,
 				1CC19048214A8D0F00F46486 /* CollectionsExtension.swift in Sources */,
 				1CC19043214A8D0F00F46486 /* BlockPinch.swift in Sources */,
 				1CC19033214A8D0F00F46486 /* DoubleExtensions.swift in Sources */,
@@ -716,6 +743,7 @@
 				1CC19037214A8D0F00F46486 /* UIWindowExtensions.swift in Sources */,
 				1CC19041214A8D0F00F46486 /* UIColoredView.swift in Sources */,
 				1CC19057214AAB4700F46486 /* ViewController.swift in Sources */,
+				1CC190A7214AF76700F46486 /* OnlyPictures.swift in Sources */,
 				1CC19034214A8D0F00F46486 /* IntExtensions.swift in Sources */,
 				1CC1903C214A8D0F00F46486 /* UIFontExtensions.swift in Sources */,
 				16129320214A7B4B00DAC499 /* ButtonBarPagerTabStripViewController.swift in Sources */,
