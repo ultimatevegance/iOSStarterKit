@@ -17,11 +17,28 @@
 		160D228A212A8F2400AED8EB /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160D2289212A8F2400AED8EB /* AppColor.swift */; };
 		160D228C212A8F3D00AED8EB /* AppFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160D228B212A8F3D00AED8EB /* AppFont.swift */; };
 		160D228E212A8F5800AED8EB /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160D228D212A8F5800AED8EB /* AppConstant.swift */; };
-		160D2293212AC97500AED8EB /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 160D2292212AC97500AED8EB /* Moya.framework */; };
 		160D2295212ACA4700AED8EB /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 160D2294212ACA4700AED8EB /* Alamofire.framework */; };
-		160D2297212ACA7D00AED8EB /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 160D2296212ACA7D00AED8EB /* Result.framework */; };
+		16129317214A7B4B00DAC499 /* FXPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 16129307214A7B4A00DAC499 /* FXPageControl.m */; };
+		16129318214A7B4B00DAC499 /* SegmentedPagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16129308214A7B4B00DAC499 /* SegmentedPagerTabStripViewController.swift */; };
+		16129319214A7B4B00DAC499 /* ButtonBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1612930A214A7B4B00DAC499 /* ButtonBarView.swift */; };
+		1612931A214A7B4B00DAC499 /* PagerTabStripBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1612930B214A7B4B00DAC499 /* PagerTabStripBehaviour.swift */; };
+		1612931B214A7B4B00DAC499 /* BarPagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1612930C214A7B4B00DAC499 /* BarPagerTabStripViewController.swift */; };
+		1612931C214A7B4B00DAC499 /* ButtonBarViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1612930D214A7B4B00DAC499 /* ButtonBarViewCell.swift */; };
+		1612931D214A7B4B00DAC499 /* BarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1612930E214A7B4B00DAC499 /* BarView.swift */; };
+		1612931E214A7B4B00DAC499 /* BaseButtonBarPagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1612930F214A7B4B00DAC499 /* BaseButtonBarPagerTabStripViewController.swift */; };
+		1612931F214A7B4B00DAC499 /* SwipeDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16129310214A7B4B00DAC499 /* SwipeDirection.swift */; };
+		16129320214A7B4B00DAC499 /* ButtonBarPagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16129311214A7B4B00DAC499 /* ButtonBarPagerTabStripViewController.swift */; };
+		16129321214A7B4B00DAC499 /* PagerTabStripError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16129312214A7B4B00DAC499 /* PagerTabStripError.swift */; };
+		16129322214A7B4B00DAC499 /* ButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16129313214A7B4B00DAC499 /* ButtonCell.xib */; };
+		16129323214A7B4B00DAC499 /* PagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16129314214A7B4B00DAC499 /* PagerTabStripViewController.swift */; };
+		16129324214A7B4B00DAC499 /* TwitterPagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16129315214A7B4B00DAC499 /* TwitterPagerTabStripViewController.swift */; };
+		16129325214A7B4B00DAC499 /* IndicatorInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16129316214A7B4B00DAC499 /* IndicatorInfo.swift */; };
+		16129329214A7D9F00DAC499 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 160D2296212ACA7D00AED8EB /* Result.framework */; };
+		1612932A214A7D9F00DAC499 /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 160D2296212ACA7D00AED8EB /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1612932D214A7DA300DAC499 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 160D2294212ACA4700AED8EB /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1612932E214A7DA700DAC499 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 160D2292212AC97500AED8EB /* Moya.framework */; };
+		1612932F214A7DA700DAC499 /* Moya.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 160D2292212AC97500AED8EB /* Moya.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1C98F1CC212AFCCB00E1E188 /* UIViewEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C98F1CB212AFCCB00E1E188 /* UIViewEx.swift */; };
-		1C98F1CE212AFCF300E1E188 /* TabPager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C98F1CD212AFCF300E1E188 /* TabPager.swift */; };
 		1C98F1D0212AFD0700E1E188 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C98F1CF212AFD0700E1E188 /* DatabaseManager.swift */; };
 		1C98F1D2212AFD2300E1E188 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C98F1D1212AFD2300E1E188 /* NetworkClient.swift */; };
 		1C98F1D4212AFD3000E1E188 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C98F1D3212AFD3000E1E188 /* Helper.swift */; };
@@ -45,6 +62,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		1612932B214A7DA000DAC499 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1612932A214A7D9F00DAC499 /* Result.framework in Embed Frameworks */,
+				1612932F214A7DA700DAC499 /* Moya.framework in Embed Frameworks */,
+				1612932D214A7DA300DAC499 /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		160D2250212A819D00AED8EB /* iOSStarterKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSStarterKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		160D2253212A819E00AED8EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -65,8 +98,24 @@
 		160D2292212AC97500AED8EB /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/iOS/Moya.framework; sourceTree = "<group>"; };
 		160D2294212ACA4700AED8EB /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		160D2296212ACA7D00AED8EB /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		16129306214A7B4A00DAC499 /* iOSStarterKit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOSStarterKit-Bridging-Header.h"; sourceTree = "<group>"; };
+		16129307214A7B4A00DAC499 /* FXPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXPageControl.m; sourceTree = "<group>"; };
+		16129308214A7B4B00DAC499 /* SegmentedPagerTabStripViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedPagerTabStripViewController.swift; sourceTree = "<group>"; };
+		16129309214A7B4B00DAC499 /* FXPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXPageControl.h; sourceTree = "<group>"; };
+		1612930A214A7B4B00DAC499 /* ButtonBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonBarView.swift; sourceTree = "<group>"; };
+		1612930B214A7B4B00DAC499 /* PagerTabStripBehaviour.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagerTabStripBehaviour.swift; sourceTree = "<group>"; };
+		1612930C214A7B4B00DAC499 /* BarPagerTabStripViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarPagerTabStripViewController.swift; sourceTree = "<group>"; };
+		1612930D214A7B4B00DAC499 /* ButtonBarViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonBarViewCell.swift; sourceTree = "<group>"; };
+		1612930E214A7B4B00DAC499 /* BarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarView.swift; sourceTree = "<group>"; };
+		1612930F214A7B4B00DAC499 /* BaseButtonBarPagerTabStripViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseButtonBarPagerTabStripViewController.swift; sourceTree = "<group>"; };
+		16129310214A7B4B00DAC499 /* SwipeDirection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeDirection.swift; sourceTree = "<group>"; };
+		16129311214A7B4B00DAC499 /* ButtonBarPagerTabStripViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonBarPagerTabStripViewController.swift; sourceTree = "<group>"; };
+		16129312214A7B4B00DAC499 /* PagerTabStripError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagerTabStripError.swift; sourceTree = "<group>"; };
+		16129313214A7B4B00DAC499 /* ButtonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ButtonCell.xib; sourceTree = "<group>"; };
+		16129314214A7B4B00DAC499 /* PagerTabStripViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagerTabStripViewController.swift; sourceTree = "<group>"; };
+		16129315214A7B4B00DAC499 /* TwitterPagerTabStripViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterPagerTabStripViewController.swift; sourceTree = "<group>"; };
+		16129316214A7B4B00DAC499 /* IndicatorInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndicatorInfo.swift; sourceTree = "<group>"; };
 		1C98F1CB212AFCCB00E1E188 /* UIViewEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewEx.swift; sourceTree = "<group>"; };
-		1C98F1CD212AFCF300E1E188 /* TabPager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabPager.swift; sourceTree = "<group>"; };
 		1C98F1CF212AFD0700E1E188 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		1C98F1D1212AFD2300E1E188 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		1C98F1D3212AFD3000E1E188 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
@@ -78,9 +127,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				160D2297212ACA7D00AED8EB /* Result.framework in Frameworks */,
+				16129329214A7D9F00DAC499 /* Result.framework in Frameworks */,
+				1612932E214A7DA700DAC499 /* Moya.framework in Frameworks */,
 				160D2295212ACA4700AED8EB /* Alamofire.framework in Frameworks */,
-				160D2293212AC97500AED8EB /* Moya.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,6 +253,38 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		16129304214A7B1100DAC499 /* TabSwitcher */ = {
+			isa = PBXGroup;
+			children = (
+				16129315214A7B4B00DAC499 /* TwitterPagerTabStripViewController.swift */,
+				16129308214A7B4B00DAC499 /* SegmentedPagerTabStripViewController.swift */,
+				1612930C214A7B4B00DAC499 /* BarPagerTabStripViewController.swift */,
+				16129311214A7B4B00DAC499 /* ButtonBarPagerTabStripViewController.swift */,
+				1612930F214A7B4B00DAC499 /* BaseButtonBarPagerTabStripViewController.swift */,
+				16129305214A7B1D00DAC499 /* Core */,
+			);
+			path = TabSwitcher;
+			sourceTree = "<group>";
+		};
+		16129305214A7B1D00DAC499 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				16129314214A7B4B00DAC499 /* PagerTabStripViewController.swift */,
+				1612930E214A7B4B00DAC499 /* BarView.swift */,
+				1612930A214A7B4B00DAC499 /* ButtonBarView.swift */,
+				1612930D214A7B4B00DAC499 /* ButtonBarViewCell.swift */,
+				16129313214A7B4B00DAC499 /* ButtonCell.xib */,
+				16129309214A7B4B00DAC499 /* FXPageControl.h */,
+				16129307214A7B4A00DAC499 /* FXPageControl.m */,
+				16129316214A7B4B00DAC499 /* IndicatorInfo.swift */,
+				1612930B214A7B4B00DAC499 /* PagerTabStripBehaviour.swift */,
+				16129312214A7B4B00DAC499 /* PagerTabStripError.swift */,
+				16129310214A7B4B00DAC499 /* SwipeDirection.swift */,
+				16129306214A7B4A00DAC499 /* iOSStarterKit-Bridging-Header.h */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 		1C98F1C5212AFC4200E1E188 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -215,7 +296,7 @@
 		1C98F1C6212AFC5100E1E188 /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
-				1C98F1CD212AFCF300E1E188 /* TabPager.swift */,
+				16129304214A7B1100DAC499 /* TabSwitcher */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -262,6 +343,7 @@
 				160D224C212A819D00AED8EB /* Sources */,
 				160D224D212A819D00AED8EB /* Frameworks */,
 				160D224E212A819D00AED8EB /* Resources */,
+				1612932B214A7DA000DAC499 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -320,6 +402,7 @@
 				TargetAttributes = {
 					160D224F212A819D00AED8EB = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 					160D2263212A81A000AED8EB = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -359,6 +442,7 @@
 				160D225E212A819F00AED8EB /* LaunchScreen.storyboard in Resources */,
 				160D225B212A819F00AED8EB /* Assets.xcassets in Resources */,
 				160D2259212A819E00AED8EB /* Main.storyboard in Resources */,
+				16129322214A7B4B00DAC499 /* ButtonCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,16 +467,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16129325214A7B4B00DAC499 /* IndicatorInfo.swift in Sources */,
+				1612931D214A7B4B00DAC499 /* BarView.swift in Sources */,
+				1612931C214A7B4B00DAC499 /* ButtonBarViewCell.swift in Sources */,
 				1C98F1D0212AFD0700E1E188 /* DatabaseManager.swift in Sources */,
 				160D228C212A8F3D00AED8EB /* AppFont.swift in Sources */,
+				1612931F214A7B4B00DAC499 /* SwipeDirection.swift in Sources */,
+				16129317214A7B4B00DAC499 /* FXPageControl.m in Sources */,
+				16129318214A7B4B00DAC499 /* SegmentedPagerTabStripViewController.swift in Sources */,
 				160D228E212A8F5800AED8EB /* AppConstant.swift in Sources */,
 				1C98F1D6212AFD4100E1E188 /* BaseUIViewController.swift in Sources */,
 				160D2256212A819E00AED8EB /* ViewController.swift in Sources */,
 				160D2254212A819E00AED8EB /* AppDelegate.swift in Sources */,
+				16129321214A7B4B00DAC499 /* PagerTabStripError.swift in Sources */,
+				16129319214A7B4B00DAC499 /* ButtonBarView.swift in Sources */,
+				16129324214A7B4B00DAC499 /* TwitterPagerTabStripViewController.swift in Sources */,
+				1612931E214A7B4B00DAC499 /* BaseButtonBarPagerTabStripViewController.swift in Sources */,
 				1C98F1D2212AFD2300E1E188 /* NetworkClient.swift in Sources */,
+				16129320214A7B4B00DAC499 /* ButtonBarPagerTabStripViewController.swift in Sources */,
 				160D228A212A8F2400AED8EB /* AppColor.swift in Sources */,
+				1612931B214A7B4B00DAC499 /* BarPagerTabStripViewController.swift in Sources */,
 				1C98F1D4212AFD3000E1E188 /* Helper.swift in Sources */,
-				1C98F1CE212AFCF300E1E188 /* TabPager.swift in Sources */,
+				16129323214A7B4B00DAC499 /* PagerTabStripViewController.swift in Sources */,
+				1612931A214A7B4B00DAC499 /* PagerTabStripBehaviour.swift in Sources */,
 				1C98F1CC212AFCCB00E1E188 /* UIViewEx.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -566,8 +663,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = TSXDWSWUUR;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -579,6 +677,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.monstertech.iOSStarterKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iOSStarterKit/Base/UIComponents/TabSwitcher/Core/iOSStarterKit-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -588,8 +688,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = TSXDWSWUUR;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -601,6 +702,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.monstertech.iOSStarterKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iOSStarterKit/Base/UIComponents/TabSwitcher/Core/iOSStarterKit-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
