@@ -96,6 +96,7 @@
 		1CC19055214AA78D00F46486 /* TabSwitcherVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC19054214AA78D00F46486 /* TabSwitcherVC.swift */; };
 		1CC19057214AAB4700F46486 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC19056214AAB4700F46486 /* ViewController.swift */; };
 		1CC19059214AAC2200F46486 /* DemoChild2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC19058214AAC2200F46486 /* DemoChild2ViewController.swift */; };
+		1CC1909E214AF3DC00F46486 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CC1909D214AF3DB00F46486 /* Kingfisher.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -226,6 +227,7 @@
 		1CC19054214AA78D00F46486 /* TabSwitcherVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabSwitcherVC.swift; sourceTree = "<group>"; };
 		1CC19056214AAB4700F46486 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1CC19058214AAC2200F46486 /* DemoChild2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoChild2ViewController.swift; sourceTree = "<group>"; };
+		1CC1909D214AF3DB00F46486 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,6 +235,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CC1909E214AF3DC00F46486 /* Kingfisher.framework in Frameworks */,
 				16129329214A7D9F00DAC499 /* Result.framework in Frameworks */,
 				1612932E214A7DA700DAC499 /* Moya.framework in Frameworks */,
 				160D2295212ACA4700AED8EB /* Alamofire.framework in Frameworks */,
@@ -354,6 +357,7 @@
 		160D2291212AC97400AED8EB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1CC1909D214AF3DB00F46486 /* Kingfisher.framework */,
 				160D2296212ACA7D00AED8EB /* Result.framework */,
 				160D2294212ACA4700AED8EB /* Alamofire.framework */,
 				160D2292212AC97500AED8EB /* Moya.framework */,
@@ -503,6 +507,7 @@
 				160D224D212A819D00AED8EB /* Frameworks */,
 				160D224E212A819D00AED8EB /* Resources */,
 				1612932B214A7DA000DAC499 /* Embed Frameworks */,
+				1CC19099214AEF6300F46486 /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -620,6 +625,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1CC19099214AEF6300F46486 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Moya.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Kingfisher.framework",
+			);
+			name = "Run Script";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Result.framework",
+				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Moya.framework",
+				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
+				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Kingfisher.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		160D224C212A819D00AED8EB /* Sources */ = {
