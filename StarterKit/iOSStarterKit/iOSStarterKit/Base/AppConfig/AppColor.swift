@@ -7,3 +7,6 @@
 //
 
 import Foundation
+class AppColor: NSObject {
+    static let appThemeColor = UIColor.init(hexString: "#6638F0")
+}
