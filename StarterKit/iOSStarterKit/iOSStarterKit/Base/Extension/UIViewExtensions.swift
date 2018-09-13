@@ -10,6 +10,29 @@
 
 import UIKit
 
+
+
+extension UIView {
+    @IBInspectable var cornerRadius: CGFloat {
+        get {
+            return layer.cornerRadius
+        }
+        set {
+            layer.cornerRadius = newValue
+            layer.masksToBounds = newValue > 0
+        }
+    }
+}
+
+// MARK: HUD
+extension UIView {
+    /// Show Loading HUD
+    public func showLoading() {
+       
+    }
+
+}
+
 // MARK: Custom UIView Initilizers
 extension UIView {
     /// EZSE: convenience contructor to define a view based on width, height and base coordinates.
@@ -318,17 +341,19 @@ extension UIView {
         self.layer.masksToBounds = true
     }
     //TODO: add this to readme
-    /// EZSwiftExtensions
+    /// Add shadow and set cornerRadius
     public func addShadow(offset: CGSize, radius: CGFloat, color: UIColor, opacity: Float, cornerRadius: CGFloat? = nil) {
         self.layer.shadowOffset = offset
         self.layer.shadowRadius = radius
         self.layer.shadowOpacity = opacity
         self.layer.shadowColor = color.cgColor
         if let r = cornerRadius {
-            self.layer.shadowPath = UIBezierPath(roundedRect: bounds, cornerRadius: r).cgPath
+            layer.masksToBounds = false
+            self.layer.cornerRadius = r
+//            self.layer.shadowPath = UIBezierPath(roundedRect: bounds, cornerRadius: r).cgPath
         }
     }
-
+    
     /// EZSwiftExtensions
     public func addBorder(width: CGFloat, color: UIColor) {
         layer.borderWidth = width
