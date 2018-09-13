@@ -102,6 +102,7 @@
 		1CC190A7214AF76700F46486 /* OnlyPictures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC190A2214AF76700F46486 /* OnlyPictures.swift */; };
 		1CC190A8214AF76700F46486 /* OnlyHorizontalPictures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC190A3214AF76700F46486 /* OnlyHorizontalPictures.swift */; };
 		1CC190A9214AF76700F46486 /* OnlyPicturesAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC190A4214AF76700F46486 /* OnlyPicturesAnimations.swift */; };
+		1CC190AB214AF9F100F46486 /* Hero.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CC190AA214AF9F100F46486 /* Hero.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -238,6 +239,7 @@
 		1CC190A2214AF76700F46486 /* OnlyPictures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnlyPictures.swift; sourceTree = "<group>"; };
 		1CC190A3214AF76700F46486 /* OnlyHorizontalPictures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnlyHorizontalPictures.swift; sourceTree = "<group>"; };
 		1CC190A4214AF76700F46486 /* OnlyPicturesAnimations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnlyPicturesAnimations.swift; sourceTree = "<group>"; };
+		1CC190AA214AF9F100F46486 /* Hero.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Hero.framework; path = Carthage/Build/iOS/Hero.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -245,6 +247,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CC190AB214AF9F100F46486 /* Hero.framework in Frameworks */,
 				1CC1909E214AF3DC00F46486 /* Kingfisher.framework in Frameworks */,
 				16129329214A7D9F00DAC499 /* Result.framework in Frameworks */,
 				1612932E214A7DA700DAC499 /* Moya.framework in Frameworks */,
@@ -367,6 +370,7 @@
 		160D2291212AC97400AED8EB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1CC190AA214AF9F100F46486 /* Hero.framework */,
 				1CC1909D214AF3DB00F46486 /* Kingfisher.framework */,
 				160D2296212ACA7D00AED8EB /* Result.framework */,
 				160D2294212ACA4700AED8EB /* Alamofire.framework */,
@@ -660,6 +664,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Moya.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Kingfisher.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Hero.framework",
 			);
 			name = "Run Script";
 			outputPaths = (
@@ -667,6 +672,7 @@
 				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Moya.framework",
 				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
 				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Kingfisher.framework",
+				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Heroframework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
