@@ -60,6 +60,8 @@ public struct TabSwitcherSettings {
 
 open class TabSwitcherVC: PagerTabStripViewController, PagerTabStripDataSource, PagerTabStripIsProgressiveDelegate, UICollectionViewDelegate, UICollectionViewDataSource {
     
+    private var shouldUpdateContent = true
+    
     public var settings = TabSwitcherSettings()
     
     public var buttonBarItemSpec: TabSwitcherButtonBarItemSpec<ButtonBarViewCell>!
@@ -182,13 +184,23 @@ open class TabSwitcherVC: PagerTabStripViewController, PagerTabStripDataSource, 
     // MARK: - Public Methods
     
     open override func reloadPagerTabStripView() {
+        shouldUpdateContent = false
         super.reloadPagerTabStripView()
+        shouldUpdateContent = true
+        
         guard isViewLoaded else { return }
         buttonBarView.reloadData()
         cachedCellWidths = calculateWidths()
+        updateContent()
         buttonBarView.moveTo(index: currentIndex, animated: false, swipeDirection: .none, pagerScroll: .yes)
     }
     
+    open override func updateContent() {
+        if shouldUpdateContent {
+            super.updateContent()
+        }
+    }
+
     open func calculateStretchedCellWidths(_ minimumCellWidths: [CGFloat], suggestedStretchedCellWidth: CGFloat, previousNumberOfLargeCells: Int) -> CGFloat {
         var numberOfLargeCells = 0
         var totalWidthOfLargeCells: CGFloat = 0
@@ -238,7 +250,10 @@ open class TabSwitcherVC: PagerTabStripViewController, PagerTabStripDataSource, 
     
     private func cellForItems(at indexPaths: [IndexPath], reloadIfNotVisible reload: Bool = true) -> [ButtonBarViewCell?] {
         let cells = indexPaths.map { buttonBarView.cellForItem(at: $0) as? ButtonBarViewCell }
-        
+        // https://github.com/bank/XLPagerTabStrip/commit/b11b615319f2bafd59de696c8fbbfad937c1d927
+        let uniqueIndexPaths = Set<IndexPath>(indexPaths)
+        guard uniqueIndexPaths.count > 1 else { return cells }
+
         if reload {
             let indexPathsToReload = cells.enumerated()
                 .compactMap { (arg) -> IndexPath? in
