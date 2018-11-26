@@ -8,7 +8,7 @@
 
 import Foundation
 
-// design UIView in Xib file, in order to see the real time rendering in code ,change class name to MTSUIView
+// design UIView in Xib file, in order to see the real time rendering in xcode ,change class name to MTSUIView
 @IBDesignable
 class MTSUIView: UIView {
     
