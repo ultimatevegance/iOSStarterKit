@@ -16,8 +16,7 @@ class DemoChildViewController: UIViewController,IndicatorInfoProvider {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-          self.view.backgroundColor = UIColor.random()
-
+          self.view.backgroundColor = UIColor.white
     }
 
     override func didReceiveMemoryWarning() {

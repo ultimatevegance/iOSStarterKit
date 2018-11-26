@@ -139,7 +139,7 @@ open class ButtonBarView: UICollectionView {
             selectedBarFrame.origin.x = selectedCellFrame.origin.x
         case .fixedWidth:
             selectedBarFrame.size.width = selectedBarWidth
-            selectedBar.setCornerRadius(radius: CGFloat(self.selectedBarHeight) / 2)
+            selectedBar.cornerRadius = CGFloat(self.selectedBarHeight) / 2
             selectedBarFrame.origin.x = selectedCellFrame.origin.x + selectedCellFrame.size.width / 2 - selectedBarWidth / 2
             }
       

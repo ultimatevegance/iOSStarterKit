@@ -16,7 +16,7 @@ class DemoChild2ViewController: UIViewController,IndicatorInfoProvider{
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.random()
+        self.view.backgroundColor = UIColor.green
 
         // Do any additional setup after loading the view.
     }
