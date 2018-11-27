@@ -20,7 +20,6 @@ class ViewController: TabSwitcherVC  {
         configTabStyle() // config Before super.viewDidLoad()
         super.viewDidLoad()
         view.backgroundColor = .white
-        
     }
     
     private func configTabStyle() {

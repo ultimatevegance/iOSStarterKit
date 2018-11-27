@@ -25,3 +25,4 @@ class DemoChildViewController: UIViewController,IndicatorInfoProvider {
     }
     
 }
+

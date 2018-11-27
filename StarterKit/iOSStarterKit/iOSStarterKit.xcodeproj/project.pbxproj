@@ -51,8 +51,10 @@
 		169C100F21ABD40A0048A616 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169C100E21ABD40A0048A616 /* UIColorExtension.swift */; };
 		169C101121ABD4150048A616 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169C101021ABD4150048A616 /* File.swift */; };
 		169C101321ABD61A0048A616 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169C101221ABD61A0048A616 /* UIViewExtension.swift */; };
+		169C101821ACF6150048A616 /* DemoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169C101621ACF6150048A616 /* DemoTableViewCell.swift */; };
+		169C101921ACF6150048A616 /* DemoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 169C101721ACF6150048A616 /* DemoTableViewCell.xib */; };
 		1C98F1D0212AFD0700E1E188 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C98F1CF212AFD0700E1E188 /* DatabaseManager.swift */; };
-		1C98F1D2212AFD2300E1E188 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C98F1D1212AFD2300E1E188 /* NetworkClient.swift */; };
+		1C98F1D2212AFD2300E1E188 /* ExampleAPIServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C98F1D1212AFD2300E1E188 /* ExampleAPIServices.swift */; };
 		1C98F1D4212AFD3000E1E188 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C98F1D3212AFD3000E1E188 /* Helper.swift */; };
 		1C98F1D6212AFD4100E1E188 /* BaseUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C98F1D5212AFD4100E1E188 /* BaseUIViewController.swift */; };
 		1CC1904D214A914E00F46486 /* DemoChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC1904C214A914E00F46486 /* DemoChildViewController.swift */; };
@@ -151,8 +153,10 @@
 		169C100E21ABD40A0048A616 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		169C101021ABD4150048A616 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		169C101221ABD61A0048A616 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		169C101621ACF6150048A616 /* DemoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoTableViewCell.swift; sourceTree = "<group>"; };
+		169C101721ACF6150048A616 /* DemoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DemoTableViewCell.xib; sourceTree = "<group>"; };
 		1C98F1CF212AFD0700E1E188 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
-		1C98F1D1212AFD2300E1E188 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		1C98F1D1212AFD2300E1E188 /* ExampleAPIServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleAPIServices.swift; sourceTree = "<group>"; };
 		1C98F1D3212AFD3000E1E188 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		1C98F1D5212AFD4100E1E188 /* BaseUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUIViewController.swift; sourceTree = "<group>"; };
 		1CC1904C214A914E00F46486 /* DemoChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoChildViewController.swift; sourceTree = "<group>"; };
@@ -281,6 +285,8 @@
 				1CC19056214AAB4700F46486 /* ViewController.swift */,
 				1CC1904C214A914E00F46486 /* DemoChildViewController.swift */,
 				1CC19058214AAC2200F46486 /* DemoChild2ViewController.swift */,
+				169C101621ACF6150048A616 /* DemoTableViewCell.swift */,
+				169C101721ACF6150048A616 /* DemoTableViewCell.xib */,
 				160D2257212A819E00AED8EB /* Main.storyboard */,
 			);
 			path = BizModules;
@@ -403,7 +409,7 @@
 		1C98F1C8212AFC5800E1E188 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				1C98F1D1212AFD2300E1E188 /* NetworkClient.swift */,
+				1C98F1D1212AFD2300E1E188 /* ExampleAPIServices.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -548,6 +554,7 @@
 				160D2259212A819E00AED8EB /* Main.storyboard in Resources */,
 				169C0FFB21A7FCCA0048A616 /* MTSAlbumListCell.xib in Resources */,
 				16129322214A7B4B00DAC499 /* ButtonCell.xib in Resources */,
+				169C101921ACF6150048A616 /* DemoTableViewCell.xib in Resources */,
 				169C0FFF21A7FCFC0048A616 /* MTSAssetsCollectionCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -600,6 +607,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				169C101821ACF6150048A616 /* DemoTableViewCell.swift in Sources */,
 				1CC190A8214AF76700F46486 /* OnlyHorizontalPictures.swift in Sources */,
 				16129325214A7B4B00DAC499 /* IndicatorInfo.swift in Sources */,
 				1612931D214A7B4B00DAC499 /* BarView.swift in Sources */,
@@ -632,7 +640,7 @@
 				169C100F21ABD40A0048A616 /* UIColorExtension.swift in Sources */,
 				16129324214A7B4B00DAC499 /* TwitterPagerTabStripViewController.swift in Sources */,
 				1612931E214A7B4B00DAC499 /* BaseButtonBarPagerTabStripViewController.swift in Sources */,
-				1C98F1D2212AFD2300E1E188 /* NetworkClient.swift in Sources */,
+				1C98F1D2212AFD2300E1E188 /* ExampleAPIServices.swift in Sources */,
 				1CC19057214AAB4700F46486 /* ViewController.swift in Sources */,
 				1CC190A7214AF76700F46486 /* OnlyPictures.swift in Sources */,
 				16129320214A7B4B00DAC499 /* ButtonBarPagerTabStripViewController.swift in Sources */,
