@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1604434C21BE5C6800AEC27D /* MTSStatusIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1604434B21BE5C6800AEC27D /* MTSStatusIndicator.swift */; };
 		160D2254212A819E00AED8EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160D2253212A819E00AED8EB /* AppDelegate.swift */; };
 		160D2259212A819E00AED8EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 160D2257212A819E00AED8EB /* Main.storyboard */; };
 		160D225B212A819F00AED8EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 160D225A212A819F00AED8EB /* Assets.xcassets */; };
@@ -105,6 +106,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1604434B21BE5C6800AEC27D /* MTSStatusIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTSStatusIndicator.swift; sourceTree = "<group>"; };
 		160D2250212A819D00AED8EB /* iOSStarterKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSStarterKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		160D2253212A819E00AED8EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		160D2258212A819E00AED8EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -203,6 +205,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1604434A21BE5B5700AEC27D /* HUDView */ = {
+			isa = PBXGroup;
+			children = (
+				1604434B21BE5C6800AEC27D /* MTSStatusIndicator.swift */,
+			);
+			path = HUDView;
+			sourceTree = "<group>";
+		};
 		160D2247212A819D00AED8EB = {
 			isa = PBXGroup;
 			children = (
@@ -391,6 +401,7 @@
 		1C98F1C6212AFC5100E1E188 /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				1604434A21BE5B5700AEC27D /* HUDView */,
 				169C0FF121A7E9D90048A616 /* MediaAssetPicker */,
 				1CC1909F214AF71100F46486 /* CircleOverlapingAvatarView */,
 				16129304214A7B1100DAC499 /* TabSwitcher */,
@@ -627,6 +638,7 @@
 				169C0FF521A7EBD40048A616 /* Configuration.swift in Sources */,
 				160D228C212A8F3D00AED8EB /* AppFont.swift in Sources */,
 				1612931F214A7B4B00DAC499 /* SwipeDirection.swift in Sources */,
+				1604434C21BE5C6800AEC27D /* MTSStatusIndicator.swift in Sources */,
 				16129317214A7B4B00DAC499 /* FXPageControl.m in Sources */,
 				16129318214A7B4B00DAC499 /* SegmentedPagerTabStripViewController.swift in Sources */,
 				169C0FFA21A7FCCA0048A616 /* MTSAlbumListCell.swift in Sources */,
