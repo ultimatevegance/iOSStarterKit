@@ -51,8 +51,8 @@ class MTSMediaPicker: UITableViewController {
     
     private func initializeData() {
         
-        let smartAlbum = PHAssetCollection.fetchAssetCollections(with: .smartAlbum, subtype: .albumRegular, options: PHFetchOptions())
-        let userCollection = PHCollectionList.fetchTopLevelUserCollections(with: nil)
+//        let smartAlbum = PHAssetCollection.fetchAssetCollections(with: .smartAlbum, subtype: .albumRegular, options: PHFetchOptions())
+//        let userCollection = PHCollectionList.fetchTopLevelUserCollections(with: nil)
         
         
     }

@@ -33,6 +33,7 @@ struct MTSStatusIndicatorConstant {
     static let textColorDark = UIColor.black.withAlphaComponent(0.85)
     static let maxMessgeTextLines = 3
     static let cornerRadius = 10.0
+    static let imageIconSize = CGSize.init(width: 40, height: 40)
 }
 
 
@@ -77,24 +78,46 @@ open class MTSStatusIndicator: NSObject {
     }
 }
 
-private class MTSHUDView: NSObject {
+private class MTSHUDView: UIView {
     
-    var hudContentView: UIVisualEffectView
+    var hudContentView: UIVisualEffectView!
     
     var backgroundWindow: UIWindow?
     
-    var textLabel: UILabel
+    var textLabel: UILabel!
     
-    var imageView: UIImage
+    var imageView: UIImageView!
+    
+    var loadingActivityView: UIActivityIndicatorView!
     
     var isShowing: Bool = false
     
     static let shared = MTSHUDView()
     
-    let dismissTimer: Timer
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setup()
+
+    }
     
-    override init() {
-        super.init()
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    private func setup() {
+        
+        hudContentView = UIVisualEffectView.init(effect: UIBlurEffect.init(style: .dark))
+        
+        imageView = UIImageView.init(frame: CGRect.init(x: 0, y: 0, width:MTSStatusIndicatorConstant.imageIconSize.width , height: MTSStatusIndicatorConstant.imageIconSize.width))
+        
+        loadingActivityView = UIActivityIndicatorView.init(style: .whiteLarge)
+        
+        loadingActivityView.color = MTSStatusIndicatorConstant.textColorLight
+        
+        loadingActivityView.frame =  CGRect.init(x: 0, y: 0, width:MTSStatusIndicatorConstant.imageIconSize.width , height: MTSStatusIndicatorConstant.imageIconSize.width)
+        
+        textLabel = UILabel.init()
+        
         
     }
     
