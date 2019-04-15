@@ -356,6 +356,27 @@
 			path = Core;
 			sourceTree = "<group>";
 		};
+		166F17D822646CDB00ECCC18 /* DeviceInfo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DeviceInfo;
+			sourceTree = "<group>";
+		};
+		166F17D922646D4000ECCC18 /* GCDKit */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GCDKit;
+			sourceTree = "<group>";
+		};
+		166F17DA22646DF300ECCC18 /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UserDefaults;
+			sourceTree = "<group>";
+		};
 		169C0FF121A7E9D90048A616 /* MediaAssetPicker */ = {
 			isa = PBXGroup;
 			children = (
@@ -428,6 +449,9 @@
 		1C98F1C9212AFC9D00E1E188 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				166F17DA22646DF300ECCC18 /* UserDefaults */,
+				166F17D922646D4000ECCC18 /* GCDKit */,
+				166F17D822646CDB00ECCC18 /* DeviceInfo */,
 				1C98F1D3212AFD3000E1E188 /* Helper.swift */,
 			);
 			path = Tools;
